@@ -5,7 +5,7 @@
             @foreach($tours as $key => $t)
             <div class="col-xl-4 col-md-6 wow animated fadeInUp" data-wow-delay="0.1s" data-wow-duration="1500ms">
                 <div class="tour-listing__card">
-                    <a href="tour-listing-details-right.html" class="tour-listing__card-image-box">
+                    <a href="{{route('tours.show',$t->slug)}}" class="tour-listing__card-image-box">
                         <img src="{{asset("storage/$t->img")}}" alt="{{$t->name}}"
                         class="tour-listing__card-image">
                         <div class="tour-listing__card-image-overlay"></div><!-- /.tour-listing__card-image-overlay -->
@@ -17,7 +17,7 @@
                                 <span class="icon-photo-camera-1"></span>
                             </a>
                         </div><!-- /.tour-listing__card-camera-group -->
-                        <h3 class="tour-listing__card-title"><a href="tour-listing-details-right.html">{{$t->name}}</a>
+                        <h3 class="tour-listing__card-title"><a href="{{route('tours.show',$t->slug)}}">{{$t->name}}</a>
                         </h3>
 
                         <div class="tour-listing__card-inner-content">

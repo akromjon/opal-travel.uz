@@ -11,6 +11,11 @@
             <div class="col-lg-8 col-sm-7">
                 <ul class="main-footer__social">
                     <li class="main-footer__social-item">
+                    <div class="policy-links">
+                        <div id="google_translate_element"></div>
+                    </div>
+                    </li>
+                    <li class="main-footer__social-item">
                         <a href="https://facebook.com" class="main-footer__social-link"><i
                                 class="fab fa-facebook-f"></i></a>
                     </li>

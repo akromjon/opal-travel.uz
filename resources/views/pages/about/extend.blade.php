@@ -6,29 +6,7 @@
 
         </div><!-- /.sec-title -->
         <!-- /.sec-title -->
-        <form action="" class="contact-page__form form-one row gutter-20 contact-form-validated">
-            <div class="col-md-6 wow animated fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">
-                <div class="form-one__group">
-                    <input type="text" name="name" id="form-one-name-input" placeholder="Ismingiz" class="form-one__input">
-                </div><!-- /.form-one__group -->
-            </div><!-- /.col-md-6 -->
-            <div class="col-md-6 wow animated fadeInUp" data-wow-delay="0s" data-wow-duration="1500ms">
-                <div class="form-one__group">
-                    <input type="tel" value="998" name="phone" id="form-one-phone-input" placeholder="Telefon Raqam" class="form-one__input">
-                </div><!-- /.form-one__group -->
-            </div><!-- /.col-md-6 -->
-
-            <div class="col-12 wow animated fadeInUp" data-wow-delay="0.1s" data-wow-duration="1500ms">
-                <div class="form-one__group">
-                    <textarea name="message" id="form-one-message-input" cols="30" rows="10" placeholder="Xabar" class="form-one__message form-one__input"></textarea>
-                </div><!-- /.form-one__group -->
-            </div><!-- /.col-12-->
-            <div class="col-12 wow animated fadeInUp" data-wow-delay="0.2s" data-wow-duration="1500ms">
-                <div class="form-one__btn-box">
-                    <button type="submit" class="form-one__btn trevlo-btn trevlo-btn--base"><span>Yuborish</span></button>
-                </div><!-- /.form-one__btn-box -->
-            </div><!-- /.col-12-->
-        </form><!-- /.row -->
+        <livewire:contact>
         <div class="result"></div><!-- /.result -->
     </div><!-- /.container -->
     <div class="contact-page__info">

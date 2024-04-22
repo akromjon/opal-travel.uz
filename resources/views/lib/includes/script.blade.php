@@ -24,3 +24,19 @@
 <script src="{{asset('assets/vendors/jquery-circleType/jquery.circleType.js')}}"></script>
 <script src="{{asset('assets/vendors/jquery-lettering/jquery.lettering.min.js')}}"></script>
 <script src="{{asset('assets/js/trevlo.js')}}"></script>
+<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
+<script>
+    function changeLanguage(select) {
+        var selectedLanguage = select.value;
+        var widget = document.querySelector('#google_translate_element');
+        widget.querySelector('.goog-te-combo').value = selectedLanguage;
+        new google.translate.TranslateElement({ pageLanguage: 'en', includedLanguages: 'uz,ru,en,es' }, 'google_translate_element');
+    }
+</script>
+
+<script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'uz',includedLanguages: 'uz,ru,en,es',}, 'google_translate_element');
+    }
+</script>

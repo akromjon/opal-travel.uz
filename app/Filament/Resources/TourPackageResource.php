@@ -10,6 +10,7 @@ use Filament\Forms;
 use Filament\Forms\Components\Fieldset;
 use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\MarkdownEditor;
+use Filament\Forms\Components\RichEditor;
 use Filament\Forms\Components\Textarea;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Form;
@@ -47,7 +48,7 @@ class TourPackageResource extends Resource
                 Fieldset::make('2')
                     ->schema([
                         FileUpload::make('img'),
-                        MarkdownEditor::make('content')->maxWidth("100%"),
+                        RichEditor::make('content')->maxWidth("100%"),
                     ])->columns(1),
 
                 Fieldset::make('3')->schema([
